@@ -1,0 +1,76 @@
+# Testing
+
+### Get code from GitHub repository
+
+```sh
+git clone git@github.com:wmsamolet/object-map.git
+cd object-map
+```
+
+### Install composer dependencies
+
+```sh
+composer install
+```
+
+or via docker-compose
+
+```sh
+docker-compose run php72 composer install
+```
+
+### Run check coding standards
+
+```sh
+composer phpcs
+```
+
+or via docker-compose
+
+PHP 7.2
+```sh
+docker-compose run php72 composer phpcs
+```
+
+PHP 7.3
+```sh
+docker-compose run php73 composer phpcs
+```
+
+PHP 7.4
+```sh
+docker-compose run php74 composer phpcs
+```
+
+PHP 8.0
+```sh
+docker-compose run php80 composer phpcs
+```
+
+### Run unit tests
+
+```sh
+composer test
+```
+
+or via docker-compose
+
+PHP 7.2
+```sh
+docker-compose run php72 composer test
+```
+
+PHP 7.3
+```sh
+docker-compose run php73 composer test
+```
+
+PHP 7.4
+```sh
+docker-compose run php74 composer test
+```
+
+PHP 8.0
+```sh
+docker-compose run php80 composer test
+```
